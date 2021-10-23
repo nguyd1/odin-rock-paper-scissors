@@ -23,7 +23,7 @@ function playRound(playerSelection, computerSelection){
 
 function game(playerScore,computerScore){
     for(let i=0;i<5;i++){
-        let playerSelection="rock";
+        let playerSelection=prompt("Input rock||paper||scissors");
         let computerSelection=computerPlay();
         let res=playRound(playerSelection,computerSelection);
         if(res==="win") obj1.playerScore++;
